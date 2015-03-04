@@ -1,6 +1,6 @@
 {
   "name":            "functionify",
-  "version":         "0.0.2",
+  "version":         "1.0.0",
   "description":     "Wraps non-function values in a getter function",
   "main":            "index.js",
   "scripts":         {

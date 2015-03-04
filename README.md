@@ -15,7 +15,7 @@ $ npm install --save functionify
 ## Usage
 
 ```js
-var functionify = require('functionify').functionify;
+var functionify = require('functionify');
 
 var getter;
 

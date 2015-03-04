@@ -1,0 +1,29 @@
+{
+  "name":            "functionify",
+  "version":         "0.0.1",
+  "description":     "Wraps non-function values in a getter function",
+  "main":            "index.js",
+  "scripts":         {
+    "pretest": "jshint index.js",
+    "test":    "mocha -r should -R spec"
+  },
+  "repository":      {
+    "type": "git",
+    "url":  "https://github.com/jmversteeg/functionify"
+  },
+  "keywords":        [
+    "function",
+    "util"
+  ],
+  "author":          "JM Versteeg",
+  "license":         "MIT",
+  "bugs":            {
+    "url": "https://github.com/jmversteeg/functionify/issues"
+  },
+  "homepage":        "https://github.com/jmversteeg/functionify",
+  "devDependencies": {
+    "jshint": "^2.6.3",
+    "mocha":  "^2.1.0",
+    "should": "^5.0.1"
+  }
+}

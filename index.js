@@ -1,12 +1,10 @@
-module.exports.util = {};
-
 /**
- * Checks whether the given value is a function
+ * Wraps value in a getter function if it is not already a function
  * @param value
- * @returns {boolean}
+ * @returns {function}
  */
-module.exports.util.isFunction = function (value) {
-    return toString.call(value) === '[object Function]' || typeof value === 'function';
+var functionify = function (value) {
+    return functionify.isFunction(value) ? value : functionify.generateGetterFunction(value);
 };
 
 /**
@@ -14,17 +12,19 @@ module.exports.util.isFunction = function (value) {
  * @param value
  * @returns {Function}
  */
-module.exports.util.generateGetterFunction = function (value) {
+functionify.generateGetterFunction = function (value) {
     return function () {
         return value;
     };
 };
 
 /**
- * Wraps value in a getter function if it is not already a function
+ * Checks whether the given value is a function
  * @param value
- * @returns {function}
+ * @returns {boolean}
  */
-module.exports.functionify = function (value) {
-    return module.exports.util.isFunction(value) ? value : module.exports.util.generateGetterFunction(value);
+functionify.isFunction = function (value) {
+    return toString.call(value) === '[object Function]' || typeof value === 'function';
 };
+
+module.exports = functionify;

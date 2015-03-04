@@ -1,7 +1,6 @@
-var f                      = require('../'),
-    isFunction             = f.util.isFunction,
-    generateGetterFunction = f.util.generateGetterFunction,
-    functionify            = f.functionify;
+var functionify            = require('../'),
+    isFunction             = functionify.isFunction,
+    generateGetterFunction = functionify.generateGetterFunction;
 
 describe('isFunction', function () {
     it('should detect whether the input argument is a function', function () {

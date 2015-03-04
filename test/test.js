@@ -1,4 +1,5 @@
 var functionify            = require('../'),
+    should                 = require('should'),
     isFunction             = functionify.isFunction,
     generateGetterFunction = functionify.generateGetterFunction;
 

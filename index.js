@@ -24,7 +24,7 @@ functionify.generateGetterFunction = function (value) {
  * @returns {boolean}
  */
 functionify.isFunction = function (value) {
-    return toString.call(value) === '[object Function]' || typeof value === 'function';
+    return ({}).toString.call(value) === '[object Function]' || typeof value === 'function';
 };
 
 module.exports = functionify;

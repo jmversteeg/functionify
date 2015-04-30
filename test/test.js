@@ -1,7 +1,8 @@
 var functionify            = require('../'),
-    should                 = require('should'),
     isFunction             = functionify.isFunction,
     generateGetterFunction = functionify.generateGetterFunction;
+
+require('should');
 
 describe('isFunction', function () {
     it('should detect whether the input argument is a function', function () {

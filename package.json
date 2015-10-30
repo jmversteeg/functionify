@@ -22,9 +22,9 @@
   },
   "homepage":        "https://github.com/jmversteeg/functionify",
   "devDependencies": {
-    "coveralls": "^2.11.2",
-    "jshint":    "^2.6.3",
-    "mocha":     "^2.1.0",
-    "should":    "^5.0.1"
+    "coveralls": "^2.11.4",
+    "jshint":    "^2.8.0",
+    "mocha":     "^2.3.3",
+    "should":    "^7.1.1"
   }
 }

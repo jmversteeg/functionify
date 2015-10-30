@@ -18,8 +18,8 @@ describe('generateGetterFunction', function () {
             'foo': 'bar'
         };
         var getterFunc = generateGetterFunction(inputArg);
-        getterFunc.should.be.Function;
-        getterFunc().should.eql(inputArg);
+        getterFunc.should.be.a.Function();
+        getterFunc().should.equal(inputArg);
     });
 });
 
@@ -28,8 +28,8 @@ describe('functionify', function () {
         var getData = function () {
             return 'foobar';
         };
-        functionify(getData).should.be.Function.and.eql(getData);
-        functionify('foobar').should.be.Function;
+        functionify(getData).should.be.a.Function().and.equal(getData);
+        functionify('foobar').should.be.a.Function();
         functionify('foobar')().should.be.exactly('foobar');
     });
 });

@@ -1,10 +1,10 @@
 # functionify
+
+> Wraps non-function values in a getter function
+
 [![Build Status][travis-image]][travis-url]
-[![devDependency Status][david-dev-image]][david-dev-url]
 [![Code Coverage][coveralls-image]][coveralls-url]
 [![NPM Version][npm-image]][npm-url]
-
-Wraps non-function values in a getter function
 
 ## Install
 
@@ -34,6 +34,8 @@ getter();
 ## License
 
 MIT © JM Versteeg
+
+[![devDependency Status][david-dev-image]][david-dev-url]
 
 [travis-image]: https://img.shields.io/travis/jmversteeg/functionify.svg?style=flat-square
 [travis-url]: https://travis-ci.org/jmversteeg/functionify
